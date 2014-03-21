@@ -34,6 +34,8 @@ Aqui un tutorial por mejorandola para usar GitHub: https://www.youtube.com/watch
 
 * Nueva etiqueta vista en HTML5 <figure></figure>: Exclusiva para la inserción de imagenes.
 
+*over-flow:hidden : Aqui explica con detalle el funcionamiento de este atributo en CSS: http://www.desarrolloweb.com/articulos/atributo-overflow-css.html
+
 =====================================================================================================
 Luego se trabajó en el proyecto Puls...
 =====================================================================================================
