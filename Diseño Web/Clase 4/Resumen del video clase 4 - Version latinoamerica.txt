@@ -1,0 +1,184 @@
+====================================================================================================
+* Ayuda a complementar este archivo en GitHub dando un "Pull Request" o "Fork" para tener un clon en tu perfil.
+* Gracias Mejorando.la
+* Creado por @VictorHTorres.
+=====================================================================================================
+
+* <form>
+	* action
+	* method
+		* post: envia los datos dentro del request al server.
+		* get: Todos los parametros del form se encuentran en la URL.
+	*enctype
+
+	* <input>
+		* type: por defecto será de texto.
+		* name: relación que le llegará al server.
+		* placeholder: para indicarle al usuario que debe poner en la casilla.
+		* required: significa que debe ser diligenciado.
+
+	* nuevos inputs en HTML5
+		* color
+		* date
+		* datetime
+		* datetime-local
+		* email
+		* month
+		* number
+		* range
+		* search
+		* tel
+		* time
+		* url
+		* week
+
+	* Al form le agregamos un ID para manipularlo con JS.
+	* Usamos "label" en <form> para ponerle un texto al lado de la casilla del formulario. En HTML5 podemos usar otra opción llamada placeholder.
+
+Para más información sobre la etiqueta <form>: http://www.w3schools.com/tags/tag_form.asp
+
+* No usar IDs para asignar estilos en el form. Por eso creo un class con el mismo nombre del ID.
+
+* Introducción a la programación:
+
+	* Instrucciones: operaciones que se le envia a la pc para ser ejecutadas.
+
+	* Variable: objeto que toma un valor. RECOMENDADO: Los atributos constantes se deben definir desde el principio.
+
+		* Tipos variables:
+			* numeros = 1
+			* texto "algo"
+			* objeto = {}
+			* booleano = false o true
+			* arreglos =[1,2,3] lista de cosas "ordenadas". Son muy flexibles y no se limita a que sean de un solo tipo (se puede mezclar).
+				* Posiciones en el arreglo:
+
+				var pares = [0,2,4,6,8]
+				pares[0] = 0
+				pares[1] = 2
+				...
+				pares[4] = 8
+				pares.length = te da el tamaño del arreglo = 5
+				pares[5] = ERROR no esta definido. undefined
+
+				El arreglo también puede tener varios tipos de variables:
+
+				var wtf = [0, true, [5,9,2], {}, "a"];
+
+				wtf[3] = {}
+				wtf[2][2] = 2 interactuar con otros arreglos dentro (asimila una matriz)
+				wtf.lenght = 4
+
+			objeto: no tienen longitud (se debe recorrer con un for).
+
+				* Para relacionar elementos en el objeto, podemos usar un punto (.) o por medio de corchetes y comillas.
+				ejemplo 1:
+				var o ={}
+				o.hola = 9
+
+				ejemplo 2:
+
+				var o={}
+				o["hola tu"] = 9 porque el elemento tiene un espacio.
+
+			* Condicionales: Evaluación que lleva condición o requisito. Pueden resultar verdaderas o falsas.
+
+			Sintaxis en JS.
+
+			if(soyRico){
+				trabajar = false;
+			}
+
+				=== ? Para mitigar problemas de equivalencia. No solamente que sean equivalentes sino que sean del mismo tipo.
+
+			Sintaxis IF-ELSE
+
+			if(soyRico){
+				trabajar = false;
+			}else{
+				trabajar = true;
+			}
+
+			Condiciones if-else-if son exclusivas, lo que significa que si una es valida, las demás no las mira.
+
+			* Ciclo: Conjuntos de series y operaciones que se ejecutan repetidamente de manera ordenada.
+
+				* while es la forma más simples de trabajar con ciclos.
+
+				while(soyRico){
+					//instrucciones;
+				}
+
+				Mientras while sea verdadero, esta se ejecutará...
+
+				atajos aritmeticos en JS:					
+					a++ // a = a+1
+					a-- // a = a-1
+					a+=3 // a = a+3
+					a+=8 // a = a -8
+					a/=8 // a = a/8
+					a*=8 // a = a * 8
+
+				* for (por)
+
+				sintaxis:
+
+				for(var i=0; i<pares.length;i++){
+					suma = suma + pares[i];
+				}
+
+				propotipos de objetos: INVESTIGAR. hasOwnPropeties
+
+			* funciones: Un subalgoritmo de uno principal para reutilizarlo en otras partes.
+
+				* divide y venceras: divide el problema en varias funciones.
+				* don´t repeat yourself
+
+			* Algoritmo: Conjuntos de instrucciones para correr un programa.
+
+			sintaxis:
+
+			funtion nombreopcional (argumento1Opcional, argumento2Opcional){
+				INSTRUCCIONES...
+				//AQUI PUEDO RETORNAR VALORES CON return valoraqui
+			}
+
+			Uno puede pasar una función dentro de otra.
+
+	* Definir las variables al principio de la funcion y colocando "var".
+
+* Meter JS en HTML:
+
+	<script>
+		// contenido
+	</script>
+
+	o tambien y la mejor practica es:
+
+	<script src="nombrearchivo.js"></script>
+
+* No debemos meter js dentro del HTML. Es mejor linkearL un archivo js desde HTML.
+
+* La interacción no debe interrumpir la presentación de la página. Una recomendación es poner los script que tienen interacción directa con la carga del sitio antes de la etiqueta </body>.
+
+* ELEMENTO vs TAG: elementos son en JS, ejemplo: var tal.. los tag son los Divs de HTML y es distinto.
+
+* Con los tags de html podemos llamarlos por medio de los elementos de JS.
+
+* funciones del document (api de hmlt5):
+
+	* getElementById
+	* getElementsByClassName
+	* querySelectorAll
+	* querySelector
+
+	funciones que llaman solo los ids de html o .class, etc... ESTO NO SE ENCUENTRA EN TODAS LAS VERSIONES DE IE
+
+* Eventos: Cualquier interacción / notificación, ejemplo: load, change, mouseover, etc... Esto no es compatible con IE8 para abajo. Las librerias ayudan a que nos centremos en los navegadores modernos porque ellas se encargan de volverlo nativo.
+
+* Librerias Js:
+
+	* jQuery.com: Facilita las iteracciones que no son compatibles con navegadores viejos. Acceder a la página de jquery.com y escoger una de las dos opciones para linkear el archivo desde el server de ellos. la versión min es compatible con todos los navegadores. No es recomendable linkear al inicio del head sino al final del body.
+
+		* Función: $('selector')
+		* Animaciones: $('selector').comando()
