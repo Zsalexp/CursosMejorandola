@@ -87,3 +87,7 @@ El estilo anterior lo que hará es agregar la palabra HOLA al final de la caja <
 * overflow-hidden: no aplica en position:absolute
 
 * Minificar los archivos CSS. Para conocer más sobre que es minificar y herramientas para ello, visiten este sitio que encontré: http://tecnodiseno.com/que-es-minificar-el-css-y-5-herramientas-online-para-realizarlo/
+
+* Articulos de interés en cristalab, sobre como hacer compatible CSS3 y HTML5 en IE-old:
+	1. http://www.cristalab.com/tutoriales/como-hacer-css3-compatible-con-internet-explorer-6-7-y-8-c102333l/
+	2. http://www.cristalab.com/tutoriales/css3-en-internet-explorer-6-7-y-8-100-funcional-c99124l/
